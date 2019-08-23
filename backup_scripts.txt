@@ -1,5 +1,5 @@
     
-###############MONITORING AND BACKUP REPORT FOR DB & WEB BACKUPS######################
+###############MONITORING AND BACKUP REPORT FOR DB & WEB BACKUPS
 	
 	
 ####### TO go home folder then create a new folder the name should be anything	
@@ -28,7 +28,7 @@
      sh monitor.sh 99
 	 sh db_monitor.sh 99
 	 
-##### then we have to create three more folder which name is db_backups,web_backups and scripts..	 
+##### the we have to create three more folder which name is db_backups,web_backups and scripts..	 
      
 	 we have to create folder in cd /home/som/ then now we have to create
 	 
@@ -67,16 +67,11 @@
 ##### then we have to write scripts in it...
 
     15 0 * * * /data01/backups/scripts/web_backup.sh > /dev/null
-	0 0 * * * /data01/backups/scripts/db_backups.sh > /dev/null
+	0 0 * * * /data01/backups/scripts/db_backup.sh > /dev/null
 	
 #### then we have to check by using the command
 
      crontab -l
-	 
-#### Now its time to install apache2 
- 
-     apt install apache2 -y
-	 
 	 
 ##### now we have to create backupuser in mysql..
      
@@ -92,7 +87,7 @@
 	 
      cd /home/som/
      sh monitor.sh 99
-       sh db_monitor.sh 99
+     sh db_monitor.sh 99
 	 
 #### then u have to access the scripts.
      
