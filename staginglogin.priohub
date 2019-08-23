@@ -1,0 +1,55 @@
+<VirtualHost *:80>
+
+        # Admin email, Server Name (domain name) and any aliases
+        ServerAdmin techsupport@sombahadurlimbu.com
+        ServerName staginglogin.priohub.com
+        ServerAlias www.staginglogin.priohub.com
+
+        Header set Access-Control-Allow-Origin "*"
+        # Index file and Document Root (where the public files are located)
+        DirectoryIndex index.php index.html
+        #DocumentRoot /var/www/html/staginglogin.prioticket.com
+        Redirect permanent / https://staginglogin.priohub.com/
+
+
+  # Custom log file locations
+  #LogLevel warn
+        ErrorLog  /logs/staginglogin.priohub.com-error_log
+        SetEnvIf Request_URI "\.(jpg|xml|png|gif|ico|js|css|swf|js?.|css?.)$" DontLog
+        CustomLog /logs/staginglogin.priohub.com-access_log combined Env=!DontLog
+        #CustomLog "|/usr/bin/nc -u logserver 12201" graylog_access
+
+
+</VirtualHost>
+
+
+#NameVirtualHost *:443
+<VirtualHost *:443>
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/html/staginglogin.prioticket.com
+        ServerName staginglogin.priohub.com
+        ServerAlias www.staginglogin.priohub.com
+
+
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/STAR.priohub.com.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/STAR.priohub.com.key
+        SSLCertificateChainFile /etc/apache2/ssl/STAR.priohub.com.ca-bundle
+
+        SSLProtocol all -SSLv2
+        SSLHonorCipherOrder On
+        SSLCipherSuite 'AESGCM:RC4:SHA384:SHA256:AES !aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!kEDH:!PSK:!SRP:!kECDH'
+  Header set Access-Control-Allow-Origin "*"
+
+
+
+  # Custom log file locations
+  LogLevel warn
+
+  ErrorLog  /logs/staginglogin.priohub.com-error_log
+  SetEnvIf Request_URI "\.(jpg|xml|png|gif|ico|js|css|swf|js?.|css?.)$" DontLog
+  CustomLog /logs/staginglogin.priohub.com-access_log combined_new Env=!DontLog
+  SetEnvIf Request_URI "^/som.txt$" DontLog
+#  CustomLog "|/usr/bin/nc -u logserver 12201" graylog_access
+  
+</VirtualHost>

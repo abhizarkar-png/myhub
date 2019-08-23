@@ -1,0 +1,5 @@
+Please create new domains as :
+staginglogin.prioticket.com
+staginglogin.priohub.com
+
+Need to redirect both to same directory.
