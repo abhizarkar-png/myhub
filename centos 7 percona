@@ -1,0 +1,54 @@
+ yum -y install epel-release
+    yum -y install socat
+     yum -y remove mariadb-libs
+    yum -y install http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm
+     yum install Percona-XtraDB-Cluster-server-56
+     cd /etc/yum.repos.d
+     ls -ltr
+     vi percona-release.repo 
+    yum install Percona-XtraDB-Cluster-server-56 -y
+     systemctl start mysql
+     mysql_secure_installation
+     mysql -u root -p
+     cd
+     systemctl stop mysql
+    vi /etc/my.cnf
+     systemctl start mysql@bootstrap
+     mysql -u root -p
+     clear
+     systemctl stop mysql
+     vi /etc/my.cnf
+     systemctl start mysql@bootstrap
+     cat /etc/my.cnf
+     mysql -u root -p
+     vi db_monitor.sh
+     df -h
+     vi db_monitor.sh
+     vi db_backup.sh
+     df -h
+     mkdir -p /data/backups/db_backups
+     cd /data/backups/
+     mkdir scripts
+     cd scripts/
+     vi db_backup.sh
+     cd
+     cd /home/som/
+     vi monitor.sh
+     chmod 755 monitor.sh 
+     cd /data/backups/scripts/; ls -ltr
+     chmod 755 db_backup.sh 
+     sh db_backup.sh 
+     mkdir -p /s3backups/db1_54.203.110.66/db_backups/
+     ls -ltr
+     sh db_backup.sh 
+    vi db_backup.sh 
+     sh db_backup.sh 
+    cd /home/som/
+     ls -ltr
+     sh monitor.sh 99
+     cd /data/backups/scripts/
+     cat db_backup.sh 
+     cd /home/som/
+     ls -ltrr
+     cat monitor.sh 
+     crontab -e

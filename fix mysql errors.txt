@@ -1,0 +1,24 @@
+
+
+
+#########MySQL is “ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysqld.sock’ (2)”.
+
+    ps xa | grep mysqld | grep -v mysqld
+	
+	
+	sudo systemctl start mysql        #Debian/Ubuntu
+    sudo systemctl start mysqld       #RHEL/CentOS/Fedora
+	
+	
+	sudo systemctl status mysql       #Debian/Ubuntu
+    sudo systemctl status mysqld      #RHEL/CentOS/Fedora
+	
+	
+	
+	sudo systemctl restart mysql
+    sudo systemctl status mysql
+	
+	
+	ps xa | grep mysqld | grep -v mysqld
+	
+	 sudo netstat -tlpn | grep "mysql"
