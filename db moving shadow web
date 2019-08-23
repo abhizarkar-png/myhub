@@ -1,0 +1,19 @@
+	change directory to latest backup location
+	
+	cd /data/backups/db_backups/latestbackup date
+
+	then copy the latest database backup with scp or sftp
+	for copy database primery to shadow web
+	
+	shadow web: 
+	user: support
+	pass: mit5upp0rt66#
+
+	sftp -oPort=2289 support@172.30.2.14
+	put priopass.sql.gz
+
+	then check to open link 
+	https://dwnlds.prioticket.com/
+	user: bajrangbali
+	pass: tajmahal123#
+

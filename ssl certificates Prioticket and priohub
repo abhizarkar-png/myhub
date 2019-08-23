@@ -1,0 +1,13 @@
+
+							SSL	Certificate File
+							
+	Prioticket.com	
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/STAR.prioticket.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/STAR.prioticket_pvt.key
+        SSLCertificateChainFile /etc/apache2/ssl/STAR.prioticket_chain.crt
+	priohub.com
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/STAR.priohub.com.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/STAR.priohub.com.key
+        SSLCertificateChainFile /etc/apache2/ssl/STAR.priohub.com.ca-bundle

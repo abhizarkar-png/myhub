@@ -1,0 +1,6 @@
+												For lazarusnaturals DB
+ 
+ find . -type f -name "*.*" -print0 | xargs -0 sed -i '' -e 's/www.lazarusnaturals.com/preprod.lazarusnaturals.com/g'
+ 
+ 
+ find . -type f -name "*.*" -print0 | xargs -0 sed -i '' -e 's/www.lazarusnaturals.com/dev.lazarusnaturals.com/g'
