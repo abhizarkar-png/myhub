@@ -1,0 +1,86 @@
+1) Regularly Monitoring and capturing system log files.
+
+2) Regularly Monitoring and capturing data of server CPU , memory usage
+
+3) Regularly monitoring Filesytems space.
+
+4) Regularly monitoring capturing Network usage.
+
+5) Writing automated scripts to handle routine user and sysadmin tasks.
+
+6) Users Management and Support
+
+7) Taking backup of Important filesystems.
+
+8) Maitaining documentation for system paramters and disk layout.
+
+9) updating with new technologies
+
+10) Educating and training users and subordinates if applicable.
+
+regards,
+
+U.SivaKumar
+
+
+Innovations are made when conventions are broken
+
+6)you can use the "top" or "sar" in between time , if you dont have the glance plus software
+
+Daily check on the backups
+
+Daily Check on Server status, mostly looking at servers with alerts/warnings (usually via a monitoring tool)
+
+Package deployments and support thereof
+
+Looking into disk and storage issues
+Looking into memory and performance issues
+
+Work on tickets. This usually means working on tickets whose importance is set to medium and low.
+
+Check every Server is working Perfect, Check Backup fully completed  or any error, update patches , create/Delete/Edit user Account, create/delete/edit user permissions, audit and notification Network and systems
+
+Set repository and Install packages and update to its stable version without losing any data.
+
+Create, Delete and modify user and groups
+Must be comfortable with CLI, and perform a major task using CLI.
+Manage file system permissions for users and groups and apply system policy.
+Must be aware of all system configuration file and keep a backup of it.
+File sharing for Windows and Linux ( samba, NFS )
+Should be able to work remotely without GUI and understating of SSH.
+Must have good knowledge of shell scripts, without shell scripting you can’t be a good system admin.
+Keep a record of changes and able to solve the problem quickly.
+Troubleshoot memory issues, compile rpm and init scripts
+
+Setting up the server for Application Team – So another team will work on it like DB, HA, Web team.
+
+Health Checkup
+
+A typical day starts by going through all the mails triggered by monitoring tools and fixing any reported, then opening all the monitoring dashboards in the browser.
+
+keep an eye on server and application health
+
+1 )Based on Project Requirement , We Build servers (VM Creation or Physical Server) and  Install OS on servers . it is better to explain which tool we use to create Kickstart
+
+2) Most of the Enterprise they use LDAP/NIS for the centralized authentication so you can say Managing User Accounts in LDAP . Managing servers to add into LDAP/NIS Domain
+
+3)Installing Monitoring Agent   and Backup Application
+
+Working on Tickets  -
+
+Example Tickets ,
+
+Server Load Average is high
+
+Memory Usage is High
+
+Unable to Login to Server
+
+Disk Space Full
+
+Network is dropped
+
+
+
+
+
