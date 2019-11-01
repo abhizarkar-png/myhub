@@ -1,0 +1,19 @@
+Good morning sir,
+		Thank you for giving me the chance to introduce myself.
+	My name is Nitin Nandanwar, i’m from Nagpur, i’ve around 1.5 years of experience in Linux system administrator in the IT industry. I present in linux system administrator. 
+While i am worked as linux system administrator my job responsibilities are regular system administrator activities, server provisioning, installation of different operating systems, managing groups and users, health checking of servers, installing and configuring different packages of different operating systems.
+	While I'm working as a linux system administrator I have worked on different types of operating systems like Centos, ubuntu, Windows servers.
+ 	And also worked on different types of softwares likes apache/nginx web server, ftp , mysql, samba, nfs, Squirrel mail, proftpd, winscp, Virtualbox, vmware, IIS.
+Also I have worked on different types of protocols like http, https, nfs, cifs, ftp, ftps, pop3, NTP, SMTP,.
+	I have installing and configuring apache/nginx web servers using http & https protocol using SSL certificate and also run web server standard and non standard ports, and also creating protected directories using htAccess.
+	I have installing and configuring mysql database server, with percona xtradb cluster for high availability.
+	I have worked on nfs stands for network file sharing for sharing files between linux to linux & also worked on Samba server for sharing file system between linux to windows. I have worked on scheduling backups and restore backups.
+	I have also worked on sftp stands for secure file transfer protocol & also worked on LDAP stands for lightweight directory access protocol for Centralized user authentication.
+	& also knowledged AWS with EC2 and S3 bucket.
+This is how I can summarize my profile.
+
+	
+
+
+
+
